@@ -10,16 +10,16 @@ Supports both **case-sensitive** and **case-insensitive** search.
 Clone the repository and run with `cargo`:
 
 ```bash
-cargo run -- <query> <file_path>
+cargo run -- <query> <input_file> > <output_file>
 ````
 
 ### Example:
 
 ```bash
-cargo run -- Rust sample.txt
+cargo run -- Rust input.txt > output.txt
 ```
 
-This will search for the word `Rust` in `sample.txt` with **case-sensitive** matching.
+This will search for the word `Rust` in `input.txt` with **case-sensitive** matching and writes the result to `output.txt` file if there is no any error. Otherwise, it prints out the error message in standard error console
 
 ---
 
@@ -28,7 +28,7 @@ This will search for the word `Rust` in `sample.txt` with **case-sensitive** mat
 To perform a **case-insensitive** search, set the environment variable `IGNORE_CASE` to `1`:
 
 ```bash
-IGNORE_CASE=1 cargo run -- to poem.txt
+IGNORE_CASE=1 cargo run -- Rust input.txt > output.txt
 ```
 
 ---

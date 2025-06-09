@@ -1,0 +1,3 @@
+Rust is empowering everyone to build reliable and efficient software.
+RUST can be used for web development as well.
+Trust me, rUsT will be huge!
