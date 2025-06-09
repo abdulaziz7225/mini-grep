@@ -1,0 +1,7 @@
+Rust is empowering everyone to build reliable and efficient software.
+Go is expressive, concise, clean, and efficient.
+C++ is powerful, fast, and used in systems programming.
+Python is intuitive and great for rapid development.
+RUST can be used for web development as well.
+Trust me, rUsT will be huge!
+Functional programming is on the rise.
