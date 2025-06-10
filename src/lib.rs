@@ -1,6 +1,6 @@
-//! # MiniGrep 🕵️‍♂️📄
+//! # SimpleGrep 🕵️‍♂️📄
 //!
-//! `minigrep` is a simple command-line tool written in Rust to search for lines
+//! `simple_grep` is a simple command-line tool written in Rust to search for lines
 //! that contain a specific query string in a given text file, similar to Unix `grep`.
 //!
 //! It supports both case-sensitive and case-insensitive search based on the
@@ -28,7 +28,7 @@ use std::env;
 use std::error::Error;
 use std::fs;
 
-/// Holds the configuration parameters for the MiniGrep application.
+/// Holds the configuration parameters for the SimpleGrep application.
 ///
 /// This struct is created using the [`Config::build`] method,
 /// which parses command-line arguments and reads the `IGNORE_CASE`
@@ -60,10 +60,10 @@ impl Config {
     /// # Examples
     ///
     /// ```
-    /// use minigrep::Config;
+    /// use simple_grep::Config;
     ///
     /// let args = vec![
-    ///     String::from("minigrep"), // normally the binary name
+    ///     String::from("simple_grep"), // normally the binary name
     ///     String::from("Rust"),
     ///     String::from("input.txt"),
     /// ];
@@ -96,7 +96,7 @@ impl Config {
     }
 }
 
-/// Executes the main logic of MiniGrep: reads the file, searches for the query,
+/// Executes the main logic of SimpleGrep: reads the file, searches for the query,
 /// and prints matching lines to stdout.
 ///
 /// # Arguments
@@ -110,7 +110,7 @@ impl Config {
 /// # Examples
 ///
 /// ```no_run
-/// use minigrep::{Config, run};
+/// use simple_grep::{Config, run};
 ///
 /// let config = Config {
 ///     query: String::from("Rust"),
@@ -152,7 +152,7 @@ pub fn run(config: Config) -> Result<(), Box<dyn Error>> {
 /// # Examples
 ///
 /// ```
-/// use minigrep::search;
+/// use simple_grep::search;
 ///
 /// let query = "duct";
 /// let contents = "\
@@ -184,7 +184,7 @@ pub fn search<'a>(query: &str, contents: &'a str) -> Vec<&'a str> {
 /// # Examples
 ///
 /// ```
-/// use minigrep::search_case_insensitive;
+/// use simple_grep::search_case_insensitive;
 ///
 /// let query = "rUsT";
 /// let contents = "\

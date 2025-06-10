@@ -1,4 +1,4 @@
-# MiniGrep 🕵️‍♂️📄
+# SimpleGrep 🕵️‍♂️📄
 
 A simple command-line text search tool in Rust, inspired by `grep`.  
 Supports both **case-sensitive** and **case-insensitive** search.
@@ -13,7 +13,7 @@ Clone the repository and run with `cargo`:
 cargo run -- <query> <input_file> > <output_file>
 ````
 
-### Example:
+### Example
 
 ```bash
 cargo run -- Rust input.txt > output.txt

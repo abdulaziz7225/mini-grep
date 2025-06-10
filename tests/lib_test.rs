@@ -1,4 +1,4 @@
-use minigrep::{search, search_case_insensitive};
+use simple_grep::{search, search_case_insensitive};
 
 #[test]
 fn case_sensitive() {
