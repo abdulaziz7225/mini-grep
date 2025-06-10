@@ -1,6 +1,10 @@
 [package]
-name = "minigrep"
+name = "simple_grep"
 version = "0.1.0"
+authors = ["Abdulaziz Musaev <amusaev7225@gmail.com>"]
 edition = "2024"
+license = "MIT"
+description = "A simple command-line text search tool in Rust, inspired by grep"
+repository = "https://github.com/abdulaziz7225/simple-grep"
 
 [dependencies]

@@ -13,7 +13,7 @@ Clone the repository and run with `cargo`:
 cargo run -- <query> <input_file> > <output_file>
 ````
 
-### Example:
+### Example
 
 ```bash
 cargo run -- Rust input.txt > output.txt
